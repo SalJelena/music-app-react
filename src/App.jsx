@@ -15,7 +15,7 @@ const App = () => {
 
         <div className="flex xl:flex-row flex-col-reverse">
 
-          <div className="flex xl:w-2/3 w-full xl:mr-5 m-0 mb-8">
+          <div className="flex xl:w-2/3 w-full xl:mr-5 m-0 mb-8 z-10">
             <Routes>
               <Route path="/" element={<Discover />} />
               <Route path="/top-artists" element={<TopArtists />} />
@@ -35,7 +35,7 @@ const App = () => {
       </div>
 
       {activeSong?.title && (
-        <div className="absolute h-28 bottom-0 left-0 right-0 flex animate-slideup bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg rounded-t-3xl z-10">
+        <div className="fixed h-28 bottom-0 left-0 right-0 flex animate-slideup bg-gradient-to-br from-white/10 to-[#2a2a80] backdrop-blur-lg rounded-t-3xl z-10">
           <MusicPlayer />
         </div>
       )}
