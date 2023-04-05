@@ -14,7 +14,7 @@ const App = () => {
         <Searchbar />
 
         <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">
-          <div className="flex-1 h-fit pb-40">
+          <div className="flex-1 md:w-2/3 pb-40 w-full">
             <Routes>
               <Route path="/" element={<Discover />} />
               <Route path="/top-artists" element={<TopArtists />} />
@@ -25,7 +25,7 @@ const App = () => {
               <Route path="/search/:searchTerm" element={<Search />} />
             </Routes>
           </div>
-          <div className="xl:sticky relative top-0 h-fit">
+          <div className="xl:sticky relative top-0 md:overflow-y-auto md:hide-scrollbar md:w-1/3">
             <TopPlay />
           </div>
         </div>
