@@ -15,12 +15,12 @@ const Searchbar = () => {
   return (
     <form
       autoComplete="off"
-      className="p-2 text-gray-400 focus-within:text-gray-600"
+      className="text-gray-400 focus-within:text-gray-600 mb-2"
       onSubmit={handleSubmit}
     >
       <label htmlFor="search-field" className="sr-only">Search all songs</label>
       <div className="flex flex-row justify-start items-center">
-        <FiSearch className="w-5 h-5 ml-4" />
+        <FiSearch className="w-5 h-5" />
         <input 
           name="search-field" 
           autoComplete="off" 

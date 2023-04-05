@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 /* Active Navigation Link */
 .active {
   @apply text-cyan-500;
@@ -41,3 +43,4 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
  } 
+
