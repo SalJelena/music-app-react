@@ -4,6 +4,7 @@ import {RiCloseLine} from 'react-icons/ri';
 import { logo } from "../assets";
 import { links } from "../assets/constants";
 import { HiOutlineMenu } from "react-icons/hi";
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
 
 const NavLinks = () => {
   return <div className="mt-10">
@@ -20,6 +21,8 @@ const NavLinks = () => {
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  mobileMenuOpen ? disableBodyScroll(document) : enableBodyScroll(document)
 
   return (
     <>
